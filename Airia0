@@ -1,0 +1,420 @@
+{
+  "available": true,
+  "metadata": {
+    "id": "6f533036-6546-4f0d-9e3c-a0dc78c03521",
+    "exportVersion": "20251030204053_MeetingEntitiesUpdates",
+    "tagline": "",
+    "agentDescription": "",
+    "industry": "",
+    "tasks": "",
+    "credentialExportOption": "Placeholder",
+    "dataSourceExportOption": "Placeholder",
+    "versionInformation": "2.00",
+    "state": "Preview",
+    "contributorId": "019a6149-eeb2-7a44-b1e3-37a0fd44ed02",
+    "contributorGivenName": "Libby",
+    "contributorSurname": "Tan",
+    "videoLink": "",
+    "readiness": "Template",
+    "department": "Everyone",
+    "agentLastUpdated": "2025-11-08T18:51:17.0208550Z",
+    "country": null
+  },
+  "agent": {
+    "id": "6f533036-6546-4f0d-9e3c-a0dc78c03521",
+    "name": "memory agent",
+    "executionName": "untitled_agent_%281%29",
+    "agentIcon": null,
+    "agentDescription": "",
+    "markdownDescription": "",
+    "videoLink": "",
+    "industry": "",
+    "subIndustries": [],
+    "tags": [],
+    "agentDetails": null,
+    "steps": [
+      {
+        "id": "19c3dde7-9c30-42ec-b3f0-07a368161212",
+        "stepType": "AIOperation",
+        "position": {
+          "x": "12",
+          "y": "734"
+        },
+        "handles": [
+          {
+            "uuid": "81c269df-c8e5-45ff-a186-b9fe01fcaf4f",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78848,
+            "y": -3.0271606
+          },
+          {
+            "uuid": "990d1c89-2d23-4836-8cd2-76cfc5faa79f",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 87.7861,
+            "y": 51.965332
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "69369759-32cf-4dcb-8377-9b737df14f9e",
+            "parentHandleId": "b4ae5922-f24d-4f2d-a393-9eb7e5fc9e6a",
+            "handleId": "81c269df-c8e5-45ff-a186-b9fe01fcaf4f"
+          }
+        ],
+        "temperature": 0.7,
+        "includeDateTimeContext": false,
+        "promptId": "aeb656d3-ed98-4ecd-b146-2c8c2e6e078b",
+        "modelId": "a3d3d73f-5253-4db7-856f-82b88c9d2ae5",
+        "toolParamsJson": "{}",
+        "stepTitle": "AI Model",
+        "width": 360,
+        "height": 109,
+        "aiOperationStepIncludeChatHistory": true
+      },
+      {
+        "id": "28b71cd2-51d0-48f1-b520-0d0f0d474925",
+        "stepType": "inputStep",
+        "position": {
+          "x": "483",
+          "y": "12"
+        },
+        "handles": [
+          {
+            "uuid": "7180cbe0-a167-4dbf-b725-22bd1b8ff716",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 69.623474,
+            "y": 39.856903
+          }
+        ],
+        "dependenciesObject": [],
+        "stepTitle": "Input",
+        "width": 288,
+        "height": 85,
+        "inputVariablesJson": "[]"
+      },
+      {
+        "id": "424cd4cc-7f8f-4dc4-868f-86c7866f17cd",
+        "stepType": "memoryStoreStep",
+        "position": {
+          "x": "507",
+          "y": "732"
+        },
+        "handles": [
+          {
+            "uuid": "fe2c7646-38a5-45fb-8a46-6fc42c34157b",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78851,
+            "y": -3.0272217
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "547d22d1-ba3d-47d0-9914-019442f774b1",
+            "parentHandleId": "1e888545-4430-4065-9001-e1ab7aab9c60",
+            "handleId": "fe2c7646-38a5-45fb-8a46-6fc42c34157b"
+          }
+        ],
+        "memoryId": "6bd4bf0d-e526-4c34-b695-b86e7fb473ea",
+        "stepTitle": "Memory 1",
+        "width": 360,
+        "height": 113,
+        "memoryStoreStepAppendText": false
+      },
+      {
+        "id": "4e58d450-1bce-42e7-973e-1108e0b89cf3",
+        "stepType": "memoryLoadStep",
+        "position": {
+          "x": "12",
+          "y": "356"
+        },
+        "handles": [
+          {
+            "uuid": "dba23052-d035-4833-aa7f-9b431bda8d95",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 87.7861,
+            "y": 53.9834
+          }
+        ],
+        "dependenciesObject": [],
+        "memoryId": "6bd4bf0d-e526-4c34-b695-b86e7fb473ea",
+        "stepTitle": "Memory",
+        "width": 360,
+        "height": 113
+      },
+      {
+        "id": "547d22d1-ba3d-47d0-9914-019442f774b1",
+        "stepType": "pythonStep",
+        "position": {
+          "x": "507",
+          "y": "544"
+        },
+        "handles": [
+          {
+            "uuid": "d313920f-577b-4269-ad88-95bcdf2fff45",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78851,
+            "y": -3.0272217
+          },
+          {
+            "uuid": "1e888545-4430-4065-9001-e1ab7aab9c60",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78851,
+            "y": 53.984863
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "95d83f86-ede3-4eaf-92f6-c752afe772c2",
+            "parentHandleId": "5850ad06-c619-41b6-bb68-e26a65dc127e",
+            "handleId": "d313920f-577b-4269-ad88-95bcdf2fff45"
+          }
+        ],
+        "pythonCodeBlockId": "547d22d1-ba3d-47d0-9914-019442f774b1",
+        "stepTitle": "coding memory",
+        "width": 360,
+        "height": 113
+      },
+      {
+        "id": "69369759-32cf-4dcb-8377-9b737df14f9e",
+        "stepType": "pythonStep",
+        "position": {
+          "x": "12",
+          "y": "544"
+        },
+        "handles": [
+          {
+            "uuid": "7fa0baa0-5b2b-4686-86dc-2276fc5b4ddb",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.7861,
+            "y": -3.0270996
+          },
+          {
+            "uuid": "b4ae5922-f24d-4f2d-a393-9eb7e5fc9e6a",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 87.7861,
+            "y": 53.9834
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "95d83f86-ede3-4eaf-92f6-c752afe772c2",
+            "parentHandleId": "31582d14-c869-4498-9454-618ffefb1dd2",
+            "handleId": "7fa0baa0-5b2b-4686-86dc-2276fc5b4ddb"
+          },
+          {
+            "parentId": "4e58d450-1bce-42e7-973e-1108e0b89cf3",
+            "parentHandleId": "dba23052-d035-4833-aa7f-9b431bda8d95",
+            "handleId": "7fa0baa0-5b2b-4686-86dc-2276fc5b4ddb"
+          }
+        ],
+        "pythonCodeBlockId": "69369759-32cf-4dcb-8377-9b737df14f9e",
+        "stepTitle": "interpreting memory",
+        "width": 360,
+        "height": 113
+      },
+      {
+        "id": "93327faa-238e-44dc-8a1c-b37b7bfa7e17",
+        "stepType": "outputStep",
+        "position": {
+          "x": "72",
+          "y": "920"
+        },
+        "handles": [
+          {
+            "uuid": "a91c0236-7970-403f-b759-72e27cc7bb34",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 57.515015,
+            "y": -3.0270996
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "19c3dde7-9c30-42ec-b3f0-07a368161212",
+            "parentHandleId": "990d1c89-2d23-4836-8cd2-76cfc5faa79f",
+            "handleId": "a91c0236-7970-403f-b759-72e27cc7bb34"
+          }
+        ],
+        "stepTitle": "Output",
+        "width": 240,
+        "height": 85
+      },
+      {
+        "id": "95d83f86-ede3-4eaf-92f6-c752afe772c2",
+        "stepType": "conditionalBranchStep",
+        "position": {
+          "x": "447",
+          "y": "356"
+        },
+        "handles": [
+          {
+            "uuid": "31582d14-c869-4498-9454-618ffefb1dd2",
+            "type": "source",
+            "label": "Short-term Only",
+            "tooltip": "Short-term Only",
+            "x": 76.68878,
+            "y": 53.984924
+          },
+          {
+            "uuid": "5850ad06-c619-41b6-bb68-e26a65dc127e",
+            "type": "source",
+            "label": "Store Long-term",
+            "tooltip": "Store Long-term",
+            "x": 98.88818,
+            "y": 53.984924
+          },
+          {
+            "uuid": "abe3029c-151e-4280-991c-1ddecb0164e8",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78845,
+            "y": -3.0271606
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "bac7100d-605e-4d28-ab3e-7ae04f6191d6",
+            "parentHandleId": "aa08e41f-c757-4c55-bbe9-b23c832fdf0c",
+            "handleId": "abe3029c-151e-4280-991c-1ddecb0164e8"
+          }
+        ],
+        "stepTitle": "Conditional Branch",
+        "width": 360,
+        "height": 113,
+        "conditionalBranchCode": "\"\"\"\nMemory Classification Router\n根据Memory Classifier的输出决定是否存储到长期记忆\n\"\"\"\n\n# 获取上一步(Memory Classifier)的输出结果\n# 假设Memory Classifier节点名字叫 \"Memory Classifier\"\nclassifier_results = execution_parameters.get(\"step_results_by_name\", {}).get(\"Memory Classifier\", {})\n\n# 提取分类结果（LLM返回的JSON）\n# 如果LLM直接返回JSON对象\nif isinstance(classifier_results, dict) and \"should_store_long_term\" in classifier_results:\n    should_store = classifier_results.get(\"should_store_long_term\", False)\n# 如果LLM返回的是包含response字段的对象\nelif isinstance(classifier_results, dict) and \"response\" in classifier_results:\n    import json\n    try:\n        # 尝试解析response中的JSON\n        response_text = classifier_results.get(\"response\", \"{}\")\n        parsed = json.loads(response_text)\n        should_store = parsed.get(\"should_store_long_term\", False)\n    except:\n        # 如果解析失败，默认不存储\n        should_store = False\nelse:\n    # 兜底：默认不存储\n    should_store = False\n\n# 根据判断结果返回路由\nif should_store:\n    branches = [\"Store Long-term\"]  # 存储到长期记忆的路由\nelse:\n    branches = [\"Short-term Only\"]  # 仅短期记忆的路由\n\n# 可选：打印调试信息（在执行日志中可以看到）\nprint(f\"[DEBUG] Classifier results: {classifier_results}\")\nprint(f\"[DEBUG] Should store long-term: {should_store}\")\nprint(f\"[DEBUG] Taking branches: {branches}\")\n",
+        "conditionalBranchConfigJson": "{\"31582d14-c869-4498-9454-618ffefb1dd2\": {\"Id\": \"31582d14-c869-4498-9454-618ffefb1dd2\", \"Label\": \"Short-term Only\"}, \"5850ad06-c619-41b6-bb68-e26a65dc127e\": {\"Id\": \"5850ad06-c619-41b6-bb68-e26a65dc127e\", \"Label\": \"Store Long-term\"}}",
+        "routerConfig": {
+          "31582d14-c869-4498-9454-618ffefb1dd2": {
+            "id": "31582d14-c869-4498-9454-618ffefb1dd2",
+            "label": "Short-term Only"
+          },
+          "5850ad06-c619-41b6-bb68-e26a65dc127e": {
+            "id": "5850ad06-c619-41b6-bb68-e26a65dc127e",
+            "label": "Store Long-term"
+          }
+        }
+      },
+      {
+        "id": "bac7100d-605e-4d28-ab3e-7ae04f6191d6",
+        "stepType": "AIOperation",
+        "position": {
+          "x": "447",
+          "y": "172"
+        },
+        "handles": [
+          {
+            "uuid": "aa08e41f-c757-4c55-bbe9-b23c832fdf0c",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78607,
+            "y": 51.965332
+          },
+          {
+            "uuid": "b58a5c1d-6162-42ab-923e-905d3f844924",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 87.78607,
+            "y": -3.0270996
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "28b71cd2-51d0-48f1-b520-0d0f0d474925",
+            "parentHandleId": "7180cbe0-a167-4dbf-b725-22bd1b8ff716",
+            "handleId": "b58a5c1d-6162-42ab-923e-905d3f844924"
+          }
+        ],
+        "temperature": 0.7,
+        "includeDateTimeContext": false,
+        "promptId": "b8f94ec9-ac37-459e-b3a3-b7da416cdf93",
+        "modelId": "a3d3d73f-5253-4db7-856f-82b88c9d2ae5",
+        "toolParamsJson": "{}",
+        "stepTitle": "AI Model 1",
+        "width": 360,
+        "height": 109,
+        "aiOperationStepIncludeChatHistory": true
+      }
+    ],
+    "behaviours": [],
+    "agentUnicodeIcon": "",
+    "agentIconBase64": null,
+    "alignment": "Vertical"
+  },
+  "dataSources": null,
+  "prompts": [
+    {
+      "name": "aeb656d3-ed98-4ecd-b146-2c8c2e6e078b",
+      "versionChangeDescription": "Consolidated from multiple prompt segments",
+      "promptMessage": "You are a smart assistant with memory.\n\n{{Python - Parse Memories.formatted_text}}\n\n【Current User Input】 {{input}}\n\nInstructions:\n\nIf there are relevant historical memories, reference them naturally.\n\nDo not mechanically say \"According to my memory,\" but use the information directly.\n\nIf a contradiction is found, politely ask for confirmation.\n\nIf there is no relevant memory, answer normally.\n\nGood Example:\n\nUser before: \"I like coffee\"\n\nNow asks: \"Recommend a drink\"\n\nAnswer: \"Considering you like coffee, I recommend trying the cold brew...\"\n\nDo not say: \"According to my memory, you like coffee\"",
+      "isAgentSpecific": true,
+      "id": "aeb656d3-ed98-4ecd-b146-2c8c2e6e078b"
+    },
+    {
+      "name": "b8f94ec9-ac37-459e-b3a3-b7da416cdf93",
+      "versionChangeDescription": "Consolidated from multiple prompt segments",
+      "promptMessage": "you are a memory classification expert. Analyze the user input to determine if it contains information worth remembering long-term. Information requiring long-term memory:\n\nPersonal preferences (likes/dislikes)\n\nImportant facts (name, occupation, birthday, family)\n\nGoals and plans\n\nFrequently mentioned topics Temporary information (short-term memory only):\n\nSmall talk and greetings\n\nOne-time questions\n\nTime-sensitive information like weather or news\n\nUser Input: {{input}}\n\nReturn Format (Pure JSON, no markdown):\n\nJSON\n\n{\n  \"should_store_long_term\": true,\n  \"category\": \"preference\",\n  \"memory_summary\": \"User likes to drink coffee\",\n  \"importance\": 8\n}\nOptional values for category: preference, fact, goal, habit, other Range for importance: 1-10",
+      "isAgentSpecific": true,
+      "id": "b8f94ec9-ac37-459e-b3a3-b7da416cdf93"
+    }
+  ],
+  "tools": null,
+  "models": [
+    {
+      "id": "a3d3d73f-5253-4db7-856f-82b88c9d2ae5",
+      "displayName": "GPT 4.1 Nano",
+      "modelName": "gpt-4.1-nano-2025-04-14",
+      "promptId": null,
+      "systemPromptDefinition": null,
+      "inputType": "image",
+      "provider": "OpenAI",
+      "sourceType": "library",
+      "libraryModelId": "2a7f6e9d-8b3c-4e5a-9d1b-6f8a5c4e3d2f",
+      "author": "OpenAI",
+      "category": "Multimodal"
+    }
+  ],
+  "memories": [
+    {
+      "id": "6bd4bf0d-e526-4c34-b695-b86e7fb473ea",
+      "name": "long memory",
+      "isUserSpecific": true
+    }
+  ],
+  "pythonCodeBlocks": [
+    {
+      "id": "547d22d1-ba3d-47d0-9914-019442f774b1",
+      "code": "\"\"\"\n格式化记忆准备存储\n\"\"\"\nimport json\nfrom datetime import datetime\n\n# 获取Memory Classifier的结果\nclassifier = execution_parameters.get(\"step_results_by_name\", {}).get(\"Memory Classifier\", {})\n\nmemory_data = {}\n\ntry:\n    if isinstance(classifier, dict):\n        if \"response\" in classifier:\n            text = str(classifier[\"response\"]).replace(\"```json\", \"\").replace(\"```\", \"\").strip()\n            memory_data = json.loads(text)\n        else:\n            memory_data = classifier\nexcept Exception as e:\n    print(f\"Error parsing classifier: {e}\")\n\n# 提取字段\nmemory_summary = memory_data.get(\"memory_summary\", \"\")\ncategory = memory_data.get(\"category\", \"other\")\nimportance = memory_data.get(\"importance\", 5)\noriginal_input = client_data.get(\"user_input\", \"\")\ntimestamp = datetime.now().isoformat()\n\n# 格式化为单行（用|||分隔符）\nformatted_memory = f\"{memory_summary}|||{category}|||{importance}|||{timestamp}|||{original_input}\"\n\nprint(f\"💾 Formatted memory: {formatted_memory[:100]}...\")\n\n# 输出给Memory Store\noutput = formatted_memory\n```\n"
+    },
+    {
+      "id": "69369759-32cf-4dcb-8377-9b737df14f9e",
+      "code": "\"\"\"\n读取Memory Load并检索相关记忆\n\"\"\"\nimport json\n\n# === 1. 读取Memory Load的数据 ===\n# 尝试从不同位置获取Memory Load的结果\nloaded_memories_raw = \"\"\n\n# 方法A: 从memory_load类型的步骤获取\nmemory_load_steps = execution_parameters.get(\"step_results_by_type\", {}).get(\"memory_load\", [])\nif memory_load_steps:\n    latest = memory_load_steps[-1] if memory_load_steps else {}\n    loaded_memories_raw = (\n        latest.get(\"value\") or \n        latest.get(\"output\") or \n        latest.get(\"result\") or \n        \"\"\n    )\n\n# 方法B: 从step_results_by_name获取（如果Memory Load节点有名字）\nif not loaded_memories_raw:\n    memory_node = execution_parameters.get(\"step_results_by_name\", {}).get(\"Memory Load\", {})\n    loaded_memories_raw = (\n        memory_node.get(\"value\") or \n        memory_node.get(\"output\") or \n        \"\"\n    )\n\nprint(f\"=== Memory Load Raw Data ===\")\nprint(f\"Type: {type(loaded_memories_raw)}\")\nprint(f\"Content (first 300 chars): {str(loaded_memories_raw)[:300]}\")\nprint(f\"===========================\")\n\n# === 2. 解析记忆 ===\nmemories = []\n\nif loaded_memories_raw:\n    raw_text = str(loaded_memories_raw)\n    \n    # 按行分割（假设每行一条记忆）\n    lines = raw_text.strip().split('\\n')\n    \n    for line in lines:\n        line = line.strip()\n        if not line:\n            continue\n        \n        # 按分隔符解析（根据你在Store时用的格式）\n        parts = line.split('|||')\n        \n        if len(parts) >= 4:\n            try:\n                memory = {\n                    \"text\": parts[0].strip(),\n                    \"category\": parts[1].strip(),\n                    \"importance\": int(parts[2].strip()),\n                    \"timestamp\": parts[3].strip(),\n                    \"original\": parts[4].strip() if len(parts) > 4 else \"\"\n                }\n                memories.append(memory)\n            except Exception as e:\n                print(f\"Error parsing line: {e}\")\n\nprint(f\"✅ Parsed {len(memories)} memories\")\n\n# === 3. 检索相关记忆 ===\nuser_input = client_data.get(\"user_input\", \"\").lower()\ninput_words = set(word for word in user_input.split() if len(word) > 2)\n\nrelevant_memories = []\n\nfor memory in memories:\n    memory_text = memory[\"text\"].lower()\n    memory_words = set(word for word in memory_text.split() if len(word) > 2)\n    \n    # 计算关键词重叠\n    overlap = len(input_words & memory_words)\n    \n    if overlap > 0:\n        memory[\"relevance\"] = overlap\n        relevant_memories.append(memory)\n\n# 如果没有匹配，返回最重要的3条\nif not relevant_memories and memories:\n    relevant_memories = sorted(memories, key=lambda x: x[\"importance\"], reverse=True)[:3]\n    print(\"📌 No keyword match, returning top important memories\")\nelse:\n    # 按相关性和重要性排序\n    relevant_memories.sort(\n        key=lambda x: (x.get(\"relevance\", 0), x.get(\"importance\", 0)),\n        reverse=True\n    )\n\n# 取前3条\ntop_memories = relevant_memories[:3]\n\nprint(f\"🔍 Found {len(top_memories)} relevant memories\")\n\n# === 4. 格式化输出 ===\nif top_memories:\n    formatted = \"【相关历史记忆】\\n\"\n    for m in top_memories:\n        formatted += f\"- {m['text']} (类别: {m['category']}, 重要性: {m['importance']}/10)\\n\"\nelse:\n    formatted = \"【无相关历史记忆】\\n\"\n\n# === 5. 输出结果 ===\noutput = {\n    \"formatted_memory\": formatted,\n    \"relevant_memories\": top_memories,\n    \"total_memories\": len(memories),\n    \"user_input\": client_data.get(\"user_input\", \"\")\n}\n\nprint(f\"📤 Output ready with {len(top_memories)} memories\")"
+    }
+  ],
+  "routers": null,
+  "approvalRequests": null,
+  "agentCards": null,
+  "deployment": null,
+  "interfaces": null
+}
